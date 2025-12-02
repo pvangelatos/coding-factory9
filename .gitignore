@@ -1,0 +1,11 @@
+### IntelliJ IDEA ###
+out/
+.idea/
+**/*.log
+CodingFactory9.iml
+
+
+
+
+### Mac OS ###
+.DS_Store
