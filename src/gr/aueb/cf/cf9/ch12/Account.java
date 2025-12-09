@@ -100,7 +100,7 @@ public class Account {
         try {
             if (amount < 0) throw new Exception("The amount should be positive.");
             if (amount > balance) throw new Exception("The balance is insufficient.");
-            if (!isSsnValid(ssn)) throw new Exception("The ssn doew not match.");
+            if (!isSsnValid(ssn)) throw new Exception("The ssn does not match.");
             balance -= amount;
         } catch (Exception e) {
             System.err.println("Withdrawal failed. " + "\n" + e.getMessage());
