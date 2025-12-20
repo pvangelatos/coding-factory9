@@ -15,7 +15,8 @@ public class Main {
         bag.add("Apple"); // Duplicate, will not be added
         System.out.println("Bag contents: " + bag);
 
-        if (bag.contains("Apple")) {    // overide equals
+        // Time complexity O(1)
+        if (bag.contains("Apple")) {    // override equals && hashCode
             bag.remove("Apple");
         } else {
             System.out.println("Apple not found in the bag.");
