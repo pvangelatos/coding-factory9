@@ -20,6 +20,7 @@ public class Main {
         } else {
             System.out.println("Apple not found in the bag.");
         }
+        bag.removeIf (item -> item.startsWith("B")); // remove items that start with B
         bag.forEach(System.out::println);
     }
 }
