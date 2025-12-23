@@ -1,4 +1,4 @@
-package gr.aueb.cf.cf9.ch17.sorting;
+package gr.aueb.cf.cf9.ch17.streams;
 
 import java.util.*;
 import java.util.stream.Collectors;
