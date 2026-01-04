@@ -20,5 +20,7 @@ public class StrInit {
         System.out.println(s1);
         System.out.println("Length: " + s1.length());
         System.out.printf("City: %s\n", s1);
+
+        
     }
 }
