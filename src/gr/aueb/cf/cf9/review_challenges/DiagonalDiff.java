@@ -20,14 +20,6 @@ package gr.aueb.cf.cf9.review_challenges;
  */
 public class DiagonalDiff {
 
-    public static void main(String[] args) {
-        int[][] arr = { {1, 4, 15},
-                        {2, 1, 8},
-                        {3, 3, 1}};
-
-        System.out.println(diagonalDiff(arr));
-    }
-
     public static int diagonalDiff (int[][] arr){
         int diagonalA = 0;
         int diagonalB = 0;
