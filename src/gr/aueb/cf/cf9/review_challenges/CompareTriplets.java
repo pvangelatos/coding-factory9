@@ -4,12 +4,6 @@ import java.util.Arrays;
 
 public class CompareTriplets {
 
-    public static void main(String[] args) {
-        int[] alice = {10, 9, 15};
-        int[] bob = {17, 10, 5};
-        System.out.println(Arrays.toString(compareTriplets(alice, bob)));
-    }
-
     public static int[] compareTriplets(int[] a, int[] b){
         int[] points = new int[2];
 
