@@ -14,7 +14,7 @@ public class Main {
                                           {4, 5, 6},
                                           {9, 8, 9}};
 
-        int n = 4;
+        int n = 40;
 
         int[] numbers = {4, 5, -8, -15, 0, 0};
 
@@ -55,7 +55,6 @@ public class Main {
         testExercise("Exercise 18", UrlString.urlStringFormat("Hello World !"));
         testExercise("Exercise 19", Arrays.toString(TargetNumber.targetNumbers(numbers2, 16)));
         testExercise("Exercise 20", Arrays.toString(LeftRotateBy.leftRotate(points, 3)));
-
 
     }
 
