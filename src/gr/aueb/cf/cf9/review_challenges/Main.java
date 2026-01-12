@@ -24,18 +24,12 @@ public class Main {
 
         int[] numbers3 = {12, 4, 33, 7, 18};
 
-        System.out.println("Exercise 1 Test result:");
-        System.out.println(AddTwoIntegers.Sum(4, 9));
-        System.out.println();
-        System.out.println("Exercise 2 Test result:");
-        System.out.println(ArraysOfIntSum.SumOfAnArray(candles));
-        System.out.println();
-        System.out.println("Exercise 3 Test result:");
-        System.out.println(Arrays.toString(compareTriplets(alice, bob)));
-        System.out.println();
-        System.out.println("Exercise 4 Test result:");
-        System.out.println(DiagonalDiff.diagonalDiff(squareArr));
-        System.out.println();
+        testExercise("Exercise 1", AddTwoIntegers.sum(4, 9) );
+
+        testExercise("Exercise 2", ArraysOfIntSum.SumOfAnArray(candles));
+
+        testExercise("Exercise 3", Arrays.toString(compareTriplets(alice, bob)));
+        testExercise("Exercise 4", DiagonalDiff.diagonalDiff(squareArr));
         System.out.println("Exercise 5 Test result:");
         ScaleOfHashes.scale(n);
         System.out.println();
@@ -45,17 +39,30 @@ public class Main {
         System.out.println("Exercise 7 Test result:");
         SumsOfAnArray.sums(numbers2);
         System.out.println();
-        System.out.println("Exercise 8 Test result:");
-        System.out.println(Candles.candlesCount(candles));
-        System.out.println();
-        System.out.println("Exercise 9 Test result:");
-        System.out.println(Arrays.toString(PlayerRecords.records(points)));
-        System.out.println();
+        testExercise("Exercise 8", Candles.candlesCount(candles));
+        testExercise("Exercise 9", Arrays.toString(PlayerRecords.records(points)));
         System.out.println("Exercise 10 Test result:");
         System.out.println(MaxOfAnArray.maxPosition(numbers3));
         System.out.println(MaxOfAnArray.maxNumber(numbers3));
         System.out.println();
+        testExercise("Exercise 11", IsPrime.isPrime(17));
+        testExercise("Exersice 12", ReverseStr.reverse("Athens!"));
+        testExercise("Exersice 13", Fibonacci.fibonacci(8));
+        testExercise("Exercise 14", AnagramStr.isAnagram("listen", "silent"));
+        testExercise("Exercise 15", RemoveDublicates.removeDublicates("Hello World!"));
+        testExercise("Exercise 16", CharCount.charCount("abracadabra"));
+        testExercise("Exercise 17", Palindrome.isPalindrome("radar"));
+        testExercise("Exercise 18", UrlString.urlStringFormat("Hello World !"));
+        testExercise("Exercise 19", Arrays.toString(TargetNumber.targetNumbers(numbers2, 16)));
+        testExercise("Exercise 20", Arrays.toString(LeftRotateBy.leftRotate(points, 3)));
 
+
+    }
+
+    private static void testExercise(String name, Object result) {
+        System.out.println(name + " Test result:");
+        System.out.println(result);
+        System.out.println();
     }
 
 }
